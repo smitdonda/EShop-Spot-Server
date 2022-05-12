@@ -33,7 +33,7 @@ router.post("/signup", async (req, res) => {
       });
     }
   } catch (err) {
-    console.log(error);
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -102,7 +102,8 @@ router.post("/postproduct", async (req, res) => {
         message: "Products Data Post Successfully",
       });
     }
-  } catch {
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -125,8 +126,8 @@ router.get("/getproduct", async (req, res) => {
         message: "Products Data Get Successfully",
       });
     }
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -154,8 +155,8 @@ router.get("/getsmartmobile", async (req, res) => {
         message: "Products Data Get Successfully",
       });
     }
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -180,8 +181,8 @@ router.get("/getsmarttv", async (req, res) => {
         message: "Products Data Get Successfully",
       });
     }
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -206,8 +207,8 @@ router.get("/gettws", async (req, res) => {
         message: "Products Data Get Successfully",
       });
     }
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -232,8 +233,8 @@ router.get("/getwatch", async (req, res) => {
         message: "Products Data Get Successfully",
       });
     }
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -258,8 +259,8 @@ router.get("/getaccessories", async (req, res) => {
         message: "Products Data Get Successfully",
       });
     }
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -285,8 +286,8 @@ router.get("/getProductkeybrand/:keybrandname", async (req, res) => {
         message: "Product By BrandName Data Get Successfully",
       });
     }
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
@@ -312,8 +313,8 @@ router.get("/getProductKeyName/:keyname", async (req, res) => {
         message: "Product By BrandName Data Get Successfully",
       });
     }
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
