@@ -33,7 +33,6 @@ router.post("/signup", async (req, res) => {
       });
     }
   } catch (err) {
-    console.log(err);
     res.json({
       statusCode: 500,
       message: "Internal Server Error",
